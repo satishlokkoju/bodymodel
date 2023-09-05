@@ -161,8 +161,8 @@ int model_viewer::run( )
   }
 
   // get width and height
-  w = (int) cap->get( CV_CAP_PROP_FRAME_WIDTH );
-  h = (int) cap->get( CV_CAP_PROP_FRAME_HEIGHT );
+  w = (int) cap->get( CAP_PROP_FRAME_WIDTH );
+  h = (int) cap->get( CAP_PROP_FRAME_HEIGHT );
   // On Linux, there is currently a bug in OpenCV that returns 
   // zero for both width and height here (at least for video from file)
   // hence the following override to global variable defaults: 

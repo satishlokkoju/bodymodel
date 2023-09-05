@@ -11,7 +11,7 @@
 #ifdef __APPLE_CC__
   #include <GLUT/glut.h>
 #else
-  #include <C:\opencv\freeglut-2.8.0\include/GL/glut.h>
+  #include <GL/glut.h>
 #endif
 
 #include "mesh.h"

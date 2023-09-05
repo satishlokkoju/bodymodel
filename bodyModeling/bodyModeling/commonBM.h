@@ -14,10 +14,10 @@
 
 #else
 	#include <windows.h>
+    #include <GL/glew.h>
 	#include <GL/gl.h>
 	//#include <GL/gl2.h>
 	#include <GL/glut.h>
-	#include <GL/glext.h>
 #endif
 
 using namespace std;

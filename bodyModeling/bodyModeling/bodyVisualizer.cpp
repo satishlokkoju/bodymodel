@@ -178,9 +178,9 @@ int main(int argc, char ** argv)
 	const string	windowName = "BodyVisualizer";
 	namedWindow(windowName, cv::WINDOW_AUTOSIZE);
 
-	//setOpenGlContext(windowName);	
+	// setOpenGlContext(windowName);	
 	resizeWindow(windowName, 480, 640);
-	//setOpenGlDrawCallback(windowName,draw,NULL);
+	// setOpenGlDrawCallback(windowName,draw,NULL);
 	//Mat img = imread(argv[1]);
 	//imshow(windowName,img);
 	//waitKey(0);
@@ -221,6 +221,7 @@ int main(int argc, char ** argv)
 	// Run the application class
 	gGLViewer = new GLViewer;
 	gGLViewer->Run(argc, argv);
+	
 	delete gGLViewer;
 	gGLViewer = NULL;
 	destroyAllWindows();

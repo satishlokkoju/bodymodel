@@ -233,7 +233,7 @@ void GLViewer::InitTexture(const char * aFileName)
 
   if(mTexHandle)
   {
-	flip(image,image,0);
+	cv::flip(image,image,0);
     // Determine the color format
     GLuint format;
 	if(image.channels() == 3)
